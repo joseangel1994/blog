@@ -1,6 +1,10 @@
-## Brutal Theme ##
+/* TEAM */
+- Developer: Jose Ángel Expósito Arenas
+  GitHub: github.com/joseangel1994
+  LinkedIn: linkedin.com/in/joseangelexpositoarenas/
 
-All development & Content by Elian Van Cutsem
+/* THANKS */
+- Special thanks to ElianCodes for his amazing Astro theme.
 
-- email: hello@elian.codes
-- website: www.elian.codes
+/* SITE */
+- Blog powered by Astro.
