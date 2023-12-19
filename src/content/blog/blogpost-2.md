@@ -6,7 +6,7 @@ author: Jose Ángel Expósito Arenas
 tags:
   - Javascript
   - Software
-imgUrl: '../../assets/mentoring_blog.jpg'
+imgUrl: '../../assets/blogpost-2/destructuring_javascript.webp'
 layout: ../../layouts/BlogPost.astro
 ---
 
