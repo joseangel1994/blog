@@ -1,5 +1,5 @@
 ---
-title: 7 keys to effective sotware mentoring
+title: 7 keys to effective software mentoring
 description: Mentoring is a common practice in many sectors, including the software industry. Software professionals often work on complex teams and projects, and mentoring can be a powerful tool for enhancing productivity, learning, and personal development.
 pubDate: 2023-12-10 20:00
 author: Jose Ángel Expósito Arenas
