@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: https://thecoderoom.dev/
+Sitemap: https://thecoderoom.dev/sitemap-index.xml
