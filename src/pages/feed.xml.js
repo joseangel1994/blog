@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 export async function GET(context) {
   const blog = await getCollection('blog');
   return rss({
-    title: `JexDev's Blog`,
+    title: `The Code Room`,
     description: 'Blog made with Astro and Brutal Theme',
     stylesheet: false,
     site: context.site,
@@ -15,6 +15,6 @@ export async function GET(context) {
       link: `/blog/${post.slug}/`,
     })),
     customData: '<language>en-us</language>',
-    canonicalUrl: 'https://jex.dev',
+    canonicalUrl: 'https://thecoderoom.dev',
   });
 }

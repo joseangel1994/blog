@@ -28,7 +28,7 @@ const { pageTitle } = Astro.props;
 <header class='border-b-4 border-black flex justify-between p-6 items-center'>
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
   <a href='/' title='Back to Home'>
-    <p class='righteous md:text-5xl'>JexDev</p>
+    <p class='righteous md:text-5xl'>The Code Room</p>
   </a>
   <nav class='hidden md:inline-block'>
     <h2 class='hidden'>Navigation</h2>
@@ -53,7 +53,7 @@ const { pageTitle } = Astro.props;
               href={item.url}
               class='hover:text-green hover:underline transition-all duration-150 ease-in-out'
               target='_blank'
-              title={`'See @JexDev on ${item.name}`}
+              title={`See on ${item.name}`}
             >
               <div class:list={[item.icon, 'w-6 h-6']} />
             </a>
