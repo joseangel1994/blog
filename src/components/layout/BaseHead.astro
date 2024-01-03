@@ -31,15 +31,11 @@ const { title, description } = Astro.props;
   <meta property='twitter:title' content={title} />
   <meta property='twitter:description' content={description} /> -->
 
-  <link rel="canonical" href={canonicalURL} />
-  <link rel="icon" type="image/svg" href="/favicon.svg" />
-
-  <title>The Code Room | {title}</title>
-
-  <ViewTransitions />
-
   <!-- Google tag (gtag.js) -->
-  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-PR2F6N3W0R"></script>
+  <script
+    type="text/partytown"
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-PR2F6N3W0R"></script>
   <script type="text/partytown">
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -49,6 +45,13 @@ const { title, description } = Astro.props;
 
     gtag("config", "G-PR2F6N3W0R");
   </script>
+
+  <link rel="canonical" href={canonicalURL} />
+  <link rel="icon" type="image/svg" href="/favicon.svg" />
+
+  <title>The Code Room | {title}</title>
+
+  <ViewTransitions />
 
   <slot />
 </head>

@@ -4,13 +4,7 @@ import UnoCSS from 'unocss/astro';
 import partytown from '@astrojs/partytown';
 
 export default defineConfig({
-  // used to generate images
-  site:
-    process.env.VERCEL_ENV === 'production'
-      ? 'https://thecoderoom.dev/'
-      : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}/`
-      : 'https://localhost:3000/',
+  site: 'https://thecoderoom.dev/',
   // site:
   // process.env.VERCEL_URL
   //   ? `https://${process.env.VERCEL_URL}/`
