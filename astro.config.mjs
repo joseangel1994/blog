@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import UnoCSS from 'unocss/astro';
-import partytown from '@astrojs/partytown';
 
 export default defineConfig({
   site: 'https://thecoderoom.dev/',
@@ -12,12 +11,7 @@ export default defineConfig({
   trailingSlash: 'ignore',
   integrations: [
     sitemap(), 
-    UnoCSS({ injectReset: true }),
-    partytown({
-      config: {
-        forward: ['dataLayer.push']
-      }
-    })
+    UnoCSS({ injectReset: true })
   ],
   experimental: {
     devOverlay: true,
