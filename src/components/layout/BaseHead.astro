@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -12,35 +12,43 @@ const { title, description } = Astro.props;
 ---
 
 <head>
-  <meta charset='utf-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <meta name='generator' content={Astro.generator} />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content={Astro.generator} />
 
-  <link
-    rel='alternate'
-    href='/feed.xml'
-    type='application/rss+xml'
-  />
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" />
 
-  <meta name='title' content={`The Code Room | ${title}`} />
-  <meta name='description' content={description} />
+  <meta name="title" content={`The Code Room | ${title}`} />
+  <meta name="description" content={description} />
 
-  <meta property='og:type' content='website' />
-  <meta property='og:url' content={canonicalURL} />
-  <meta property='og:title' content={title} />
-  <meta property='og:description' content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
 
   <!-- <meta property='twitter:card' content='summary_large_image' />
   <meta property='twitter:url' content={canonicalURL} />
   <meta property='twitter:title' content={title} />
   <meta property='twitter:description' content={description} /> -->
 
-  <link rel='canonical' href={canonicalURL} />
-  <link rel='icon' type='image/svg' href='/favicon.svg' />
+  <link rel="canonical" href={canonicalURL} />
+  <link rel="icon" type="image/svg" href="/favicon.svg" />
 
   <title>The Code Room | {title}</title>
 
   <ViewTransitions />
+
+  <!-- Google tag (gtag.js) -->
+  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-PR2F6N3W0R"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-PR2F6N3W0R");
+  </script>
 
   <slot />
 </head>
