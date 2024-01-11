@@ -23,6 +23,6 @@ const { title, imgAlt, imgSrc, description } = Astro.props;
       class='rounded h-full w-full object-cover'
     />
   </div>
-  <p class='poppins'>{description}</p>
+  <p class='poppins line-clamp-3'>{description}</p>
   <slot />
 </Card>
