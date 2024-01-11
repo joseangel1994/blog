@@ -49,83 +49,18 @@ n the Discussions Mapping section, you need to select the option "Discussion tit
 
 And there you have the steps needed to configure Giscus. In the end, you'll get a snippet to add to your code, something similar to this:
 
-```js
-<script src="https://giscus.app/client.js"
-        data-repo="joseangel1994/blog"
-        data-repo-id="R_kgDOK2ByBw"
-        data-category="Blog Post Commnents"
-        data-category-id="DIC_kwDOK2ByB84CcMIi"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-```
+![Script giscus](../../assets/adding-comments-blog/adding-comments-blog-4.png)
+
 
 ## Adding Giscus to the blog
 
 Now that we have the Giscus configuration ready, let's add the comments section to the blog. There are many ways to do this, but the one I've chosen is to create a component called `BlogComments` and include the snippet obtained in the previous step there:
 
-```js
-<section class="giscus p-6 mt-6"></section>
-
-<script
-    src="https://giscus.app/client.js"
-    data-repo="joseangel1994/blog"
-    data-repo-id="R_kgDOK2ByBw"
-    data-category="Blog Post Commnents"
-    data-category-id="DIC_kwDOK2ByB84CcMIi"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async
-></script>
-
-```
+![Script giscus 2](../../assets/adding-comments-blog/adding-comments-blog-5.png)
 
 Now, import this component within the BlogPost layout and add it to the bottom of the page:
 
-```js
----
-import Layout from './Default.astro';
-import BlogSideBar from '@components/blog/BlogSideBar.astro';
-import BlogContent from '@components/blog/BlogContent.astro';
-import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
-import BlogComments from '@components/blog/BlogComments.astro';
-
-const { content, headings } = Astro.props;
-const { title, description } = content;
----
-
-<Layout
-  title={title as string}
-  description={description as string}
->
-  <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
-    <BlogSideBar headings={headings} />
-    <BlogContent content={content}>
-      <slot />
-    </BlogContent>
-  </main>
-  <BlogComments />
-  <section class='p-6'>
-    <RecentBlogPosts count={6} />
-  </section>
-</Layout>
-
-```
+![BlogComments component](../../assets/adding-comments-blog/adding-comments-blog-6.png)
 
 Done! The comments section should now appear within the blog, and on GitHub, in the Discussions section under Blog Post Comments, you should also see the same comments and reactions.
 
