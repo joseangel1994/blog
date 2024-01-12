@@ -1,7 +1,9 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import UnoCSS from 'unocss/astro';
+import partytown from "@astrojs/partytown";
 
+// https://astro.build/config
 export default defineConfig({
   site: 'https://thecoderoom.dev/',
   // site:
@@ -9,16 +11,15 @@ export default defineConfig({
   //   ? `https://${process.env.VERCEL_URL}/`
   //   : 'https://localhost:3000/',
   trailingSlash: 'ignore',
-  integrations: [
-    sitemap(), 
-    UnoCSS({ injectReset: true })
-  ],
+  integrations: [sitemap(), UnoCSS({
+    injectReset: true
+  }), partytown()],
   experimental: {
-    devOverlay: true,
+    devOverlay: true
   },
   vite: {
     optimizeDeps: {
-      exclude: ['@resvg/resvg-js'],
-    },
-  },
+      exclude: ['@resvg/resvg-js']
+    }
+  }
 });
