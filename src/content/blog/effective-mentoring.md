@@ -10,6 +10,8 @@ imgUrl: '../../assets/mentoring_blog.jpg'
 layout: ../../layouts/BlogPost.astro
 ---
 
+### Introduction
+
 Mentoring is a form of learning and development where a person with more experience (the mentor) provides guidance and support to another person (the mentee) with less experience. Through mentoring, the mentee acquires skills and knowledge that enable them to improve their professional performance and achieve their goals.
 
 Mentoring is a common practice in many sectors, including the software industry. Software professionals often work on complex teams and projects, and mentoring can be a powerful tool for enhancing productivity, learning, and personal development.
