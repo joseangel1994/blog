@@ -1,12 +1,12 @@
 ---
 title: Transaction Locking in Spring Data JPA
 description: In the world of Spring applications and managing databases, ensuring that multiple transactions can work smoothly while keeping data reliable is crucial. Spring Data JPA comes to the rescue with features like transaction locking.
-pubDate: 2024-01-20 20:00
+pubDate: 2024-01-29 13:00
 author: Jose Ángel Expósito Arenas
 tags:
   - Spring
   - Software
-imgUrl: '../../assets/adding-comments-blog/adding-comments-blog.jpg'
+imgUrl: '../../assets/transaction-locking/spring_logo.png'
 layout: ../../layouts/BlogPost.astro
 ---
 
