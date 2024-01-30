@@ -6,7 +6,7 @@ interface Props {
 const { content } = Astro.props;
 ---
 
-<article class='prose-slate w-3xl md:prose md:max-w-400 poppins'>
+<article class='prose-slate w-3xl md:prose md:max-w-400 poppins min-w-0'>
   <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
   <p class='text-slate text-sm md:text-base'>
     Published on {content.pubDate} by {content.author}
