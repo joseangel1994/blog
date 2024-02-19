@@ -10,6 +10,8 @@ imgUrl: '../../assets/transaction-locking/spring_logo.png'
 layout: ../../layouts/BlogPost.astro
 ---
 
+![Spring Data JPA transaction locking](../../assets/transaction-locking/spring_logo.png)
+
 ## Introduction
 
 In the world of Spring applications and managing databases, ensuring that multiple transactions can work smoothly while keeping data reliable is crucial. [Spring Data JPA](https://spring.io/projects/spring-data-jpa/) comes to the rescue with features like transaction locking. This blog post dives into why transaction locking in Spring Data JPA matters, looking at its tools, like optimistic and pessimistic locking, and how they help ensure databases work well.

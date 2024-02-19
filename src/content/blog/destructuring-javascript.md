@@ -10,6 +10,8 @@ imgUrl: '../../assets/blogpost-2/destructuring_javascript.webp'
 layout: ../../layouts/BlogPost.astro
 ---
 
+![Destructuring in Javascript](../../assets/blogpost-2/destructuring_javascript.webp)
+
 In this post, I will talk about the concept of destructuring assignment and its application in simplifying data extraction in JavaScript. The destructuring syntax is nothing more than a JavaScript expression that enables the extraction of data, whether from arrays or properties of any object, into one or multiple new variables.
 
 ### Why use Destructuring?

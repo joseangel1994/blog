@@ -10,6 +10,8 @@ imgUrl: '../../assets/adding-comments-blog/adding-comments-blog.jpg'
 layout: ../../layouts/BlogPost.astro
 ---
 
+![Giscus adding comments to blog](../../assets/adding-comments-blog/adding-comments-blog.jpg)
+
 Having a comments section in a blog post is the perfect way to receive feedback from readers, gather ideas for future posts, or even identify errors in what has been written.
 
 If you're using an existing platform to publish your blog, such as Medium, WordPress, or a similar one, the comment system will likely come built-in. However, in the case of this blog, which uses Astro, it can be a bit more complicated. Astro is a static site generator, and the content is stored in Git in Markdown files.

@@ -10,6 +10,8 @@ imgUrl: '../../assets/mentoring_blog.jpg'
 layout: ../../layouts/BlogPost.astro
 ---
 
+![Effective software mentoring](../../assets/mentoring_blog.jpg)
+
 ### Introduction
 
 Mentoring is a form of learning and development where a person with more experience (the mentor) provides guidance and support to another person (the mentee) with less experience. Through mentoring, the mentee acquires skills and knowledge that enable them to improve their professional performance and achieve their goals.
